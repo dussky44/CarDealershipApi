@@ -1,0 +1,37 @@
+version: '2'
+services:
+  # zookeeper:
+  #   image: wurstmeister/zookeeper
+  #   ports:
+  #     - "2181:2181"
+  # kafka:
+  #   image: wurstmeister/kafka
+  #   ports:
+  #     - "9092:9092"
+  #   environment:
+  #     KAFKA_ADVERTISED_HOST_NAME: 127.0.0.1
+  #     KAFKA_CREATE_TOPICS: "simpletalk_topic:1:1"
+  #     KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  # mailhog:
+  #   image: mailhog/mailhog
+  #   ports:
+  #     - 1025:1025 # SMTP server ports
+  #     - 8025:8025 # Web UI ports
+  cardealershipapi:
+    image: djhusky44/cardealershipapi
+    ports:
+      - "32769:80"
+  loginapi:
+    image: djhusky44/loginapi
+    ports:
+      - "32771:80"
+  orderapi:
+    image: djhusky44/orderapi
+    ports:
+      - "32772:80"
+  apigateway:
+    image: djhusky44/apigateway
+    ports:
+      - "32770:80"

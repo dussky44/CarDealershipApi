@@ -1,0 +1,64 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/cars",
+      "UpstreamPathTemplate": "/cars",
+      "UpstreamHttpMethod": [
+        "Get",
+        "OPTIONS"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 32769
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/cars/{id}",
+      "UpstreamPathTemplate": "/cars/{id}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "OPTIONS"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 32769
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/login/SignIn",
+      "UpstreamPathTemplate": "/login",
+      "UpstreamHttpMethod": [
+        "POST",
+        "OPTIONS"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 32771
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/order",
+      "UpstreamPathTemplate": "/order",
+      "UpstreamHttpMethod": [
+        "POST",
+        "OPTIONS"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 32772
+        }
+      ]
+    }
+  ]
+}

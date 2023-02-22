@@ -1,0 +1,41 @@
+[
+  {
+    "id": "Tesla",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/2018_Tesla_Model_S_75D.jpg/1200px-2018_Tesla_Model_S_75D.jpg",
+    "name": "Tesla",
+    "make": "Tesla",
+    "year": 2020,
+    "seats": 2,
+    "horsepower": 240,
+    "engine": "GT2.6",
+    "details": "One of the best S models cars of all time",
+    "kilometers": 0,
+    "price": 220000
+  },
+  {
+    "id": "Skoda",
+    "picture": "https://www.topgear.com/sites/default/files/2022/05/20-Skoda-Karoq.jpg",
+    "name": "Skoda",
+    "make": "Skoda",
+    "year": 2023,
+    "seats": 4,
+    "horsepower": 240,
+    "engine": "Good",
+    "details": "The news jewel of Skoda",
+    "kilometers": 0,
+    "price": 150000
+  },
+  {
+    "id": "Dacia",
+    "picture": "https://images.prismic.io/carwow/a01e0874-6ded-49f5-96b0-87b755b84156_2022+Dacia+Duster+Front+3Q+Moving.jpg",
+    "name": "Dacia",
+    "make": "Dacia",
+    "year": 2023,
+    "seats": 2,
+    "horsepower": 210,
+    "engine": "GT2.6",
+    "details": "New and improved, now made in France",
+    "kilometers": 0,
+    "price": 120000
+  }
+]
